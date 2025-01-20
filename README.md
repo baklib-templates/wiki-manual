@@ -1,19 +1,62 @@
-# manual帮助中心 模板
+# Baklib Manual Wiki Template
 
-## 介绍
+Empower your website with all-in-one knowledge hub, featuring Knowledgebase, Documentation, FAQ, and Advanced Search.
 
-通过知识库同步页面内容，从而实现内容和站点分离；用于大规模可重用文档内容管理，如manual、帮助文档和内容门户。
+Wiki template deployed by Baklib.
 
-demo: https://demo-manual.uibak.com/
+![Baklib Wiki based index theme](./assets/images/theme/index-full.webp)
+![Baklib Wiki based index theme](./assets/images/theme/index-list.webp)
+![Baklib Wiki based index theme](./assets/images/theme/faq-toogle-cards.png)
+![Baklib Wiki based index theme](./assets/images/theme/page.webp)
 
-教程： https://help.baklib.cn/themes/manual
+
+## 🚀 Project Structure
+
+```
+  .
+  ├── README.md
+  ├── config
+  │   └── settings_schema.json
+  ├── layout
+  │   ├── error.liquid
+  │   └── theme.liquid
+  ├── package-lock.json
+  ├── package.json
+  ├── snippets
+  │   ├── _breadcrumb.liquid
+  │   ├── _cta.liquid
+  │   ├── _custom_menu.liquid
+  │   ├── _feedback_form.liquid
+  │   ├── _footer.liquid
+  │   ├── _header.liquid
+  │   ├── _paginate.liquid
+  │   ├── _search_box.liquid
+  │   ├── _sidebar.liquid
+  │   ├── _tag.liquid
+  │   └── _tree.liquid
+  ├── statics
+  │   └── about.liquid
+  ├── tailwind.config.js
+  ├── templates
+  │   ├── index.docs.liquid
+  │   ├── index.list.liquid
+  │   ├── nav_tree.liquid
+  │   ├── page.liquid
+  │   ├── page.list.liquid
+  │   ├── search.liquid
+  │   └── tag.liquid
+  ├── yarn-error.log
+  └── yarn.lock
+```
+
+
+## 🧞 Install guide
+
+- The Template install Guide: https://help.baklib.cn/themes/manual
+
+- The Baklib template install Guide: https://dev.baklib.cn/guide/git
 
 ## 开发
 
-如何通过 git 将模板挂载到 Baklib: https://dev.baklib.cn/guide/git
+https://dev.baklib.cn
 
-## 模板截图
-
-![](https://tanmer.baklib.com/-/dam/assets/organization_pry3c5/eyJfcmFpbHMiOnsiZGF0YSI6eyJpZCI6MzA2LCJwYXRoIjoid2lraS1tb2NrdXAucG5nIiwidGltZXN0YW1wIjoiMjAyNC0wNS0xNiAyMjo0NjowNSArMDgwMCJ9LCJwdXIiOiJvcmdhbml6YXRpb25fcHJ5M2M1In19--3496986e9b4f1005f2300b1f24a015118f65698bba62430f62118560c8872ae9/manual-mockup.png)
-
-![](https://tanmer.baklib.com/-/dam/assets/organization_pry3c5/eyJfcmFpbHMiOnsiZGF0YSI6eyJpZCI6MzA1LCJwYXRoIjoid2lraS1kZW1vLnBuZyIsInRpbWVzdGFtcCI6IjIwMjQtMDUtMTYgMjI6NDY6MDUgKzA4MDAifSwicHVyIjoib3JnYW5pemF0aW9uX3ByeTNjNSJ9fQ--001731ce2a2d8abf9648d17b4d708b932428aa26a944b186dc16772b20a67fff/manual-demo.png)
