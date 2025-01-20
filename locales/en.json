@@ -1,6 +1,6 @@
 {
-  "theme_label": "Wiki",
-  "theme_description": "Content synchronized from knowledge base, for Large-scale reusable document content management, like Wiki, Documentation, and content portal.",
+  "theme_label": "Manual Wiki",
+  "theme_description": "Empower your website with all-in-one knowledge hub, featuring Knowledgebase, Documentation, FAQ, and Advanced Search.",
   "generic": {
     "close": "Close",
     "back": "Back",
@@ -20,10 +20,11 @@
     "published_at": "Published at",
     "prev_page": "previous page",
     "next_page": "next page",
-    "hot_pages": "Hottest articles",
-    "newest_pages": "Newest articles",
+    "hot_pages": "Hottest Articles",
+    "newest_pages": "Newest Articles",
+    "related_pages": "Related Articles",
     "get_started_pages": "Get Started",
-    "recommend_pages": "Recommend articles",
+    "recommend_pages": "Recommend Articles",
     "channel_pages": "Channel Navigation",
     "recent_pages": "Recent articles",
     "tags": "Tags"

@@ -109,7 +109,7 @@
   color: hsl(var(--theme-color-primary));
 }
 
-/* wiki保持跟editor样式同步，去掉了 tailwind prose */
+/* manual保持跟editor样式同步，去掉了 tailwind prose */
 .ProseMirror {
   @apply w-full max-w-4xl break-words;
   /* 使分栏的宽度固定 */

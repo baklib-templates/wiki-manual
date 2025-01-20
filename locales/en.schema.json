@@ -2,7 +2,7 @@
   "settings_schema": {
     "generic": {
       "name": "Basic Setting",
-      "help_center_index_description": "Ideal for feature-rich product user manuals",
+      "help_center_index_description": "Ideal for feature-rich product user Manual Wikis",
       "list_index_description": "list dictionary style",
       "header_name": "Header and footer menu",
       "head_title": "Head HTML Settings",

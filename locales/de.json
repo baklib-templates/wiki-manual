@@ -1,6 +1,6 @@
 {
-  "theme_label": "Wiki",
-  "theme_description": "Wird zum Erstellen von Wikis, Hilfedokumentationen und Inhaltsportalen verwendet.",
+  "theme_label": "Manual Wiki",
+  "theme_description": "Empower your website with all-in-one knowledge hub.",
   "generic": {
     "403": "403 Keine Zugriffsberechtigung",
     "404": "404 Nicht gefunden",
@@ -22,6 +22,7 @@
     "next_page": "Nächste Seite",
     "hot_pages": "Heiße Besuchsartikel",
     "newest_pages": "Neueste Artikel",
+    "related_pages": "Related Articles",
     "get_started_pages": "Get Started",
     "recommend_pages": "Recommend articles",
     "channel_pages": "Channel Navigation",
