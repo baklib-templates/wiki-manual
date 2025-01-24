@@ -19,10 +19,13 @@
 
       <!-- Desktop Menu -->
       <div class="hidden md:flex items-center space-x-8">
-        {% if site.settings.header_menu_html != '-' %}
+        {% if site.settings.header_menu_html %}
           {{ site.settings.header_menu_html }}
         {% else %}
           <a href="/s/about" class="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">About</a>
+        {% endif %}
+        {% if site.settings.contact_url %}
+          <a href="{{ site.settings.contact_url }}" target="_blank" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">{{ site.settings.contact_name }}</a>
         {% endif %}
       </div>
 
@@ -44,6 +47,9 @@
         {{ site.settings.header_menu_html }}
       {% else %}
         <a href="/s/about" class="text-gray-900 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Go to Ticket Support</a>
+      {% endif %}
+      {% if site.settings.contact_url %}
+        <a href="{{ site.settings.contact_url }}" target="_blank" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">{{ site.settings.contact_name }}</a>
       {% endif %}
     </div>
   </div>

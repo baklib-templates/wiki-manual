@@ -65,11 +65,30 @@
         "info": "若设置了logo，则页头显示 logo，否则显示：网站图标+站点名称"
       },
       {
+        "id": "slogan",
+        "type": "text",
+        "label": "站点首页口号",
+        "default": "Frequently Asked Questions"
+      },
+      {
+        "id": "description",
+        "type": "text",
+        "label": "t:settings_schema.generic.settings.description.label",
+        "default": "👋 What Can We Help?"
+      },
+      {
+        "id": "contact_name",
+        "type": "text",
+        "label": "[联系我们]按钮名称",
+        "default": "联系我们",
+        "info": "如果不希望显示按钮则不填"
+      },
+      {
         "id": "contact_url",
         "type": "text",
         "label": "[联系我们]按钮 URL",
         "default": "https://www.baklib.cn/about",
-        "info": "如果不希望显示按钮则不填内容"
+        "info": "如果不希望显示按钮则不填"
       },
       {
         "id": "company_name",
@@ -88,7 +107,6 @@
         "label": "t:settings_schema.generic.settings.header_menu_html.label",
         "info": "t:settings_schema.generic.settings.header_menu_html.info",
         "rows": 6,
-        "default": "-",
         "placeholder": "<a href='#'> title </a>"
       },
       {
@@ -97,7 +115,6 @@
         "label": "t:settings_schema.generic.settings.footer_menu_html.label",
         "info": "t:settings_schema.generic.settings.footer_menu_html.info",
         "rows": 6,
-        "default": "-",
         "placeholder": "<a href='#'> title </a>"
       },
       {
@@ -106,7 +123,6 @@
         "label": "t:settings_schema.generic.settings.features_one.label",
         "info": "t:settings_schema.generic.settings.features_one.info",
         "rows": 6,
-        "default": "-",
         "placeholder": "<div>...</div>"
       },
       {
@@ -115,7 +131,6 @@
         "label": "t:settings_schema.generic.settings.features_two.label",
         "info": "t:settings_schema.generic.settings.features_two.info",
         "rows": 6,
-        "default": "-",
         "placeholder": "<div>...</div>"
       }
     ]
