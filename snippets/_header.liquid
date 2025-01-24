@@ -1,42 +1,28 @@
-{% assign screen_width = site.settings.screen_width.value |  default: 'max-w-screen-xl' %}
 
 <!-- Navigation -->
-<nav class="bg-white shadow-lg" >
+<nav class="bg-white shadow-lg z-50 sticky top-0 left-0">
   <div class="max-w-7xl mx-auto px-4">
     <div class="flex justify-between h-20">
       <div class="flex">
         <!-- Logo -->
-        <div class="flex-shrink-0 flex items-center">
+        <a class="flex-shrink-0 flex items-center" href="{{ site.index_path}}">
           {% if site.settings.logo_url %}
             <img class="h-12 w-auto" src="{{ site.settings.logo_url }}g" alt="Logo">
+          {% elsif site.favicon_url %}
+            <img class="h-12 w-auto" src="{{ site.favicon_url }}g" alt="Logo">
+            <span class="text-gray-900 text-2xl font-bold"">{{ site.name }}</span>
           {% else %}
-            <a href="/" class="text-gray-900 text-2xl font-bold">{{ site.name }}</a>
+            <span class="text-gray-900 text-2xl font-bold"">{{ site.name }}</span>
           {% endif %}
-        </div>
+        </a>
       </div>
 
       <!-- Desktop Menu -->
       <div class="hidden md:flex items-center space-x-8">
-        {% if site.settings.header_menu_html %}
+        {% if site.settings.header_menu_html != '-' %}
           {{ site.settings.header_menu_html }}
         {% else %}
-          <a href="#" class="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Home</a>
-          <div x-data="{ open: false }" class="relative">
-            <button @click="open = !open" class="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
-              Knowledge Base
-              <svg class="ml-2 -mr-0.5 h-4 w-4 inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-              </svg>
-            </button>
-
-            <div x-show="open" @click.away="open = false" class="absolute z-10 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
-              <div class="py-1">
-                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">KB Category</a>
-                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Single Page</a>
-              </div>
-            </div>
-          </div>
-          <a href="/s/about" class="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Go to Ticket Support</a>
+          <a href="/s/about" class="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">About</a>
         {% endif %}
       </div>
 
@@ -57,9 +43,7 @@
       {% if site.settings.header_menu_html %}
         {{ site.settings.header_menu_html }}
       {% else %}
-        <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-blue-600 hover:bg-gray-50">Home</a>
-        <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-blue-600 hover:bg-gray-50">Knowledge Base</a>
-        <a href="/s/about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-blue-600 hover:bg-gray-50">Go to Ticket Support</a>
+        <a href="/s/about" class="text-gray-900 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Go to Ticket Support</a>
       {% endif %}
     </div>
   </div>

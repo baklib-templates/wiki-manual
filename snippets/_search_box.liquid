@@ -4,14 +4,15 @@
   <p class="text-gray-600 mb-8 max-w-2xl mx-auto">I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
 
   <div class="mt-10 max-w-xl mx-auto">
-    <div x-data="{ query: '' }" class="relative">
-      <input type="text" x-model="query" x-on:click="searchOpen = !searchOpen" placeholder="Have a question? Ask or enter a search term." 
-            class="w-full px-12 py-3 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500">
+    {% form_tag 'search', class: 'relative' %}
+      <input type="text" name="{{form.keywords_field_name}}" value="{{ search.keywords | escape_once }}"
+        placeholder="{{ "placeholders.search" | t }}"
+        autocomplete="on" class="w-full px-12 py-3 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500">
       <div class="absolute left-4 top-3.5">
         <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
           <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
         </svg>
       </div>
-    </div>
+    {% endform_tag %}
   </div>
 </div>

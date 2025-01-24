@@ -6,7 +6,6 @@ Wiki template deployed by Baklib.
 
 ![Baklib Wiki based index theme](./assets/images/theme/index-full.webp)
 ![Baklib Wiki based index theme](./assets/images/theme/index-list.webp)
-![Baklib Wiki based index theme](./assets/images/theme/faq-toogle-cards.png)
 ![Baklib Wiki based index theme](./assets/images/theme/page.webp)
 
 
