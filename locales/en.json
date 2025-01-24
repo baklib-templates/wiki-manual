@@ -44,6 +44,8 @@
   },
   "feedback": {
     "title": "Submit Feedback",
+    "content": "Content",
+    "thanks": "Thanks",
     "input_placeholder": "Please input feedback"
   }
 }

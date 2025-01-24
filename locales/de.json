@@ -43,6 +43,8 @@
   },
   "feedback": {
     "title": "Geben Sie Feedback ab",
+    "content": "Content",
+    "thanks": "Thanks",
     "input_placeholder": "Bitte geben Sie Feedback ein"
   }
 }

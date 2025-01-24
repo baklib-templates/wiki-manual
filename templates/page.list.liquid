@@ -1,11 +1,22 @@
 {% assign icons =  "images/demo/icon-0.png,images/demo/icon-1.png,images/demo/icon-2.png,images/demo/icon-3.png,images/demo/icon-4.png,images/demo/icon-5.png,images/demo/icon-6.png,images/demo/icon-7.png,images/demo/icon-8.png,images/demo/icon-9.png" | split: ',' %}
 {% assign card_pages = page.pages_in_list  | order_by: '-created_at' %}
 
-<!-- Hero Section -->
-<div class="bg-gradient-to-r from-primary-50 to-primary-100 py-8 lg:py-20">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="bg-gradient-to-r from-primary-50 to-primary-100 py-2 lg:py-4">
+  <div class="max-w-7xl mx-auto px-4">
     <div class="text-center">
       {% render 'breadcrumb', breadcrumb: page.breadcrumb  %}
+    </div>
+  </div>
+</div>
+
+<!-- Hero Section -->
+<div class="bg-gradient-to-r from-gray-50 to-gray-100 py-8 lg:py-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center">
+      <h1 class="text-2xl lg:text-3xl">{{ page.settings.title | escape }}</h1>
+      {% if page.settings.description %}
+        <p class="mt-4 text-lg text-gray-500">{{ page.settings.description }}</p>
+      {% endif %}
     </div>
   </div>
 </div>

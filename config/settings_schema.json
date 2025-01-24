@@ -88,6 +88,7 @@
         "label": "t:settings_schema.generic.settings.header_menu_html.label",
         "info": "t:settings_schema.generic.settings.header_menu_html.info",
         "rows": 6,
+        "default": "-",
         "placeholder": "<a href='#'> title </a>"
       },
       {
@@ -96,6 +97,7 @@
         "label": "t:settings_schema.generic.settings.footer_menu_html.label",
         "info": "t:settings_schema.generic.settings.footer_menu_html.info",
         "rows": 6,
+        "default": "-",
         "placeholder": "<a href='#'> title </a>"
       },
       {
@@ -104,6 +106,7 @@
         "label": "t:settings_schema.generic.settings.features_one.label",
         "info": "t:settings_schema.generic.settings.features_one.info",
         "rows": 6,
+        "default": "-",
         "placeholder": "<div>...</div>"
       },
       {
@@ -112,6 +115,7 @@
         "label": "t:settings_schema.generic.settings.features_two.label",
         "info": "t:settings_schema.generic.settings.features_two.info",
         "rows": 6,
+        "default": "-",
         "placeholder": "<div>...</div>"
       }
     ]

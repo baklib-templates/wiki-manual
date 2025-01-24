@@ -1,8 +1,8 @@
 
 <!-- Footer -->
-<footer class="bg-gray-900 text-gray-400">
-  <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-    <div class="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
+<footer class="bg-gray-900 text-gray-400 print:hidden">
+  <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
+    <div class="pt-4 md:flex md:items-center md:justify-between">
       <div class="flex space-x-6 md:order-2">
         {% if site.settings.footer_menu_html %}
           {{ site.settings.footer_menu_html }}
@@ -11,7 +11,7 @@
           <a href="#" class="hover:text-gray-300">Terms of Use</a>
         {% endif %}
       </div>
-      <p class="mt-8 text-base md:mt-0 md:order-1">
+      <p class="mt-4 text-base md:mt-0 md:order-1">
         &copy; 2025 {{ site.settings.company_name }}. All Rights Reserved
       </p>
     </div>

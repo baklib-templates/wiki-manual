@@ -44,6 +44,8 @@
   },
   "feedback": {
     "title": "提交反馈",
+    "content": "请告诉我们您的问题或建议",
+    "thanks": "感谢您的反馈",
     "input_placeholder": "请输入反馈内容"
   }
 }

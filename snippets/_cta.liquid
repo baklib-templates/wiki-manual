@@ -1,8 +1,12 @@
 <!-- Support Section -->
-<div class="mt-20 bg-gradient-to-r from-green-50 to-green-100 rounded-xl py-12 px-8 text-center">
-  <h2 class="text-3xl font-bold mb-4">Didn't find any Solution?</h2>
-  <p class="text-gray-600 mb-8 max-w-2xl mx-auto">I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-  <a href="#" class="inline-block px-8 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors">
-    Go to Ticket Support
-  </a>
-</div>
+{% if site.settings.features_one == '-' %}
+  <div class="mt-20 bg-gradient-to-r from-secondary-50 to-secondary-100 rounded-xl py-12 px-8 text-center">
+    <h2 class="text-3xl font-bold mb-4">Didn't find any Solution?</h2>
+    <p class="text-gray-600 mb-8 max-w-2xl mx-auto">这部分的内容在 [应用设置]--[界面展示]--[自定义HTML块(features_one)]中定义，你可以复制此处的HTML 代码过去。 </p>
+    <a href="#" class="inline-block px-8 py-3 bg-primary text-white rounded-full hover:bg-primary-700 transition-colors">
+      Go to Ticket Support
+    </a>
+  </div>
+{% else %}
+  {{ site.settings.features_one }}
+{% endif %}

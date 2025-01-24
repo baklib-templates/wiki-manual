@@ -24,14 +24,16 @@
           </div>
         {% else %}
           {% for useful_type in site.plugins.feedback.useful_types %}
-            <button name="feedback[useful_type]" value="{{ useful_type.emoji }}" :class="{ 'bg-gray-200': selected === '{{ useful_type.emoji }}' }">{{ useful_type.emoji }} {{ useful_type.label }}</button>
+            <button name="feedback[useful_type]" value="{{ useful_type.emoji }}" :class="{ 'bg-gray-200': selected === '{{ useful_type.emoji }}' }">
+              {{ useful_type.emoji }} {{ useful_type.label }}
+            </button>
           {% endfor %}
         {% endif %}
       </div>
       {%# 反馈内容 %}
       {% if site.plugins.feedback.message_enabled %}
         {% if site.plugins.feedback.message_required %}
-          <div class="text-left">* 反馈内容</div>
+          <div class="text-left">* {{ 'feedback.content' | t }}</div>
         {% endif %}
         <div class="mt-5">
           <textarea
