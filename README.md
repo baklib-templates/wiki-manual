@@ -1,6 +1,6 @@
 # Baklib Manual Wiki Template
 
-Empower your website with all-in-one knowledge hub, featuring Knowledgebase, Documentation, FAQ, and Advanced Search.
+Empower your website with all-in-one knowledge hub, featuring Knowledge base, Documentation, FAQ, and Advanced Search.
 
 Wiki template deployed by Baklib.
 

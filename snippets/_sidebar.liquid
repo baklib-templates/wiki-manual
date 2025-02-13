@@ -1,12 +1,37 @@
-<div class="relative">
-  <div
-    class="mr-0 w-72 sticky-block"
-  >
-    <div class="relative w-full pr-2 overflow-x-auto">
-      <div class="pt-8">
-        {% assign pages = site.pages['/'].children_in_nav_menu %}
-        {% render 'tree', pages: pages %}
-      </div>
-    </div>
+{% if page.parent.slug == '' %}
+  {% assign parent_id =  page.id %}
+{% else %}
+  {% assign parent_id = page.parent.id %}
+{% endif %}
+
+
+  <div class="">
+    <h2 class="my-4 mb-2 font-semibold text-lg flex gap-2 items-center">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-primary">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0ZM3.75 12h.007v.008H3.75V12Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm-.375 5.25h.007v.008H3.75v-.008Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+      </svg>
+      <span>{{ 'generic.sub_page_list' | t}}</span>
+    </h2>
+    <hr/>
+    <!-- Sidebar content here -->
+    <ul
+      x-cloak
+      @click.outside="header_navtree_show=false"
+      class="pt-5 h-full
+        overflow-y-scroll
+        [&::-webkit-scrollbar]:w-2
+        [&::-webkit-scrollbar-track]:rounded-full
+        [&::-webkit-scrollbar-track]:bg-transparent
+        [&::-webkit-scrollbar-thumb]:rounded-full
+        [&::-webkit-scrollbar-thumb]:bg-transparent
+        dark:[&::-webkit-scrollbar-track]:bg-neutral-700
+        dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500"
+        data-controller="navtree" data-navtree-target="menuList">
+      <turbo-frame
+        src="{{ site.nav_tree_path | append: '?selected_ids=' | append: page.id | append: '&parent=' | append: parent_id }}"
+        id="nav_tree"
+      ></turbo-frame>
+    </ul>
+
   </div>
-</div>
+
