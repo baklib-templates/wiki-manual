@@ -1,6 +1,9 @@
 <turbo-frame id="{{ turbo_frame_request_id }}" class="relative hidden md:block">
-  {% assign pages = pages | limit: 200 %}
-  {% for page in pages %}
-    {% render 'tree', page: page, expanded_ids: expanded_ids, selected_ids: selected_ids %}
-  {% endfor %}
+  {%# assign pages = pages | limit: 200 %}
+  {% paginate_tag pages, per: 25 %}
+    {% for page in pages %}
+      {% render 'tree', page: page, expanded_ids: expanded_ids, selected_ids: selected_ids %}
+    {% endfor %}
+    {% render 'paginate', paginate: paginate %}
+  {% endpaginate_tag %}
 </turbo-frame>

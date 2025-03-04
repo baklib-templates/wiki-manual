@@ -13,7 +13,7 @@
     {{ site.settings.head_html }}
   </head>
   <body class="bg-white text-slate-800 dark:bg-slate-900 dark:text-slate-200" id="js-body" data-controller="theme"  x-data="{ mobileMenuOpen: false, searchOpen: false }">
-    
+
       {% render 'header', settings: site.settings %}
       <main>{{ content_for_layout }}</main>
       {% render 'footer', settings: site.settings %}

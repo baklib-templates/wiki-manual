@@ -1,6 +1,6 @@
 {% assign icons =  "images/demo/icon-0.png,images/demo/icon-1.png,images/demo/icon-2.png,images/demo/icon-3.png,images/demo/icon-4.png,images/demo/icon-5.png,images/demo/icon-6.png,images/demo/icon-7.png,images/demo/icon-8.png,images/demo/icon-9.png" | split: ',' %}
 {% assign default_hero_image = 'images/bg.png' | asset_url %}
-{% assign card_pages = site.pages['/'].pages_in_list  | order_by: '-created_at' %}
+{% assign card_pages = site.pages['/'].pages_in_list  | order_by: '-edited_at' %}
 
 <!-- Hero Section -->
 {% render 'search_box', page: page %}
