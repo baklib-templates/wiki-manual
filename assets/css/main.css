@@ -653,6 +653,10 @@ video {
   top: 0px;
 }
 
+.top-24 {
+  top: 6rem;
+}
+
 .top-3 {
   top: 0.75rem;
 }
@@ -661,16 +665,8 @@ video {
   top: 0.875rem;
 }
 
-.top-32 {
-  top: 8rem;
-}
-
 .top-\[calc\(100\%-13rem\)\] {
   top: calc(100% - 13rem);
-}
-
-.top-24 {
-  top: 6rem;
 }
 
 .isolate {
@@ -828,6 +824,13 @@ video {
   -webkit-line-clamp: 1;
 }
 
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
 .line-clamp-3 {
   overflow: hidden;
   display: -webkit-box;
@@ -983,12 +986,12 @@ video {
   width: 16rem;
 }
 
-.w-72 {
-  width: 18rem;
-}
-
 .w-8 {
   width: 2rem;
+}
+
+.w-96 {
+  width: 24rem;
 }
 
 .w-\[36\.125rem\] {
@@ -1003,24 +1006,16 @@ video {
   width: 100%;
 }
 
-.w-96 {
-  width: 24rem;
-}
-
 .min-w-0 {
   min-width: 0px;
 }
 
-.min-w-4 {
-  min-width: 1rem;
-}
-
-.min-w-12 {
-  min-width: 3rem;
-}
-
 .min-w-10 {
   min-width: 2.5rem;
+}
+
+.min-w-4 {
+  min-width: 1rem;
 }
 
 .max-w-2xl {
@@ -1035,20 +1030,16 @@ video {
   max-width: 56rem;
 }
 
-.max-w-72 {
-  max-width: 18rem;
-}
-
 .max-w-7xl {
   max-width: 80rem;
 }
 
-.max-w-md {
-  max-width: 28rem;
+.max-w-full {
+  max-width: 100%;
 }
 
-.max-w-none {
-  max-width: none;
+.max-w-md {
+  max-width: 28rem;
 }
 
 .max-w-screen-lg {
@@ -1065,10 +1056,6 @@ video {
 
 .max-w-xl {
   max-width: 36rem;
-}
-
-.max-w-full {
-  max-width: 100%;
 }
 
 .flex-1 {
@@ -1337,6 +1324,10 @@ video {
   border-color: rgb(156 163 175 / var(--tw-divide-opacity));
 }
 
+.overflow-auto {
+  overflow: auto;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1489,6 +1480,11 @@ video {
   border-color: rgb(248 113 113 / var(--tw-border-opacity));
 }
 
+.border-slate-150 {
+  --tw-border-opacity: 1;
+  border-color: rgb(233 238 245 / var(--tw-border-opacity));
+}
+
 .border-slate-200 {
   --tw-border-opacity: 1;
   border-color: rgb(226 232 240 / var(--tw-border-opacity));
@@ -1502,11 +1498,6 @@ video {
 .border-teal-500 {
   --tw-border-opacity: 1;
   border-color: rgb(20 184 166 / var(--tw-border-opacity));
-}
-
-.border-slate-150 {
-  --tw-border-opacity: 1;
-  border-color: rgb(233 238 245 / var(--tw-border-opacity));
 }
 
 .bg-blue-500 {
@@ -2293,10 +2284,6 @@ video {
 
 .hover\:overflow-y-auto:hover {
   overflow-y: auto;
-}
-
-.hover\:rounded-xl:hover {
-  border-radius: 0.75rem;
 }
 
 .hover\:border-slate-400:hover {
