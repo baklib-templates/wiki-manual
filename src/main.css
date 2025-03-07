@@ -110,6 +110,11 @@
   color: hsl(var(--theme-color-primary));
 }
 
+iframe{
+  width: 100%;
+  height: 500px;
+}
+
 /* manual保持跟editor样式同步，去掉了 tailwind prose */
 .ProseMirror {
   @apply w-full max-w-4xl break-words;
