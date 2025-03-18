@@ -87,7 +87,7 @@
         "id": "contact_url",
         "type": "text",
         "label": "[联系我们]按钮 URL",
-        "default": "https://www.baklib.cn/about",
+        "placeholder": "https://www.baklib.cn/about",
         "info": "如果不希望显示按钮则不填"
       },
       {
@@ -95,6 +95,13 @@
         "type": "text",
         "label": "t:settings_schema.generic.settings.company_name.label",
         "default": "t:settings_schema.generic.settings.company_name.default"
+      },
+      {
+        "id": "company_url",
+        "type": "text",
+        "label": "公司官网URL",
+        "placeholder": "https://www.",
+        "info": "点击LOGO 图标会进入该地址"
       }
     ]
   },
